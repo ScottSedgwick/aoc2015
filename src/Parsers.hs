@@ -2,6 +2,9 @@ module Parsers where
 
 import Data.Attoparsec.Text
 
+letters :: Parser String
+letters = many1' letter
+
 listOfIntsParser :: Parser [Int]
 listOfIntsParser = listOfParser decimal
 

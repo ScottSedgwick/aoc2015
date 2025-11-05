@@ -17,6 +17,7 @@ common common-options
   build-depends:       base ^>= 4.20.0.0
                      , attoparsec
                      , containers
+                     , MissingH
                      , text
   default-extensions:  OverloadedStrings
                      , DerivingStrategies                       
@@ -44,6 +45,9 @@ library
   exposed-modules:     Parsers
                      , Day01
                      , Day02
+                     , Day03
+                     , Day04
+                     , Day05
 
 executable aoc2015
   import:              common-options
@@ -60,6 +64,7 @@ test-suite aoc2015-test
   hs-source-dirs:      test
   main-is:             Spec.hs
   other-modules:       Spec_Day02
+                     , Spec_Day03
   build-depends:       aoc2015
                      , test-framework
                      , test-framework-hunit
