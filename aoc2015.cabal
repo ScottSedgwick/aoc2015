@@ -41,7 +41,9 @@ common common-options
 library
   import:              common-options
   hs-source-dirs:      src
-  exposed-modules:     Day01
+  exposed-modules:     Parsers
+                     , Day01
+                     , Day02
 
 executable aoc2015
   import:              common-options
@@ -57,6 +59,7 @@ test-suite aoc2015-test
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
   main-is:             Spec.hs
+  other-modules:       Spec_Day02
   build-depends:       aoc2015
                      , test-framework
                      , test-framework-hunit

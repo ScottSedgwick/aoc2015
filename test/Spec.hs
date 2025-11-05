@@ -1,5 +1,8 @@
-module Main (main) where
-
+import Test.Framework
+import Spec_Day02
 
 main :: IO ()
-main = putStrLn ("Test suite is not implemented" :: String)
+main = defaultMainWithOpts
+    (  day02
+    )
+    mempty
